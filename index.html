@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ichsan & Zesika Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- Countdown CSS dari CDN -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Kepada <span> Bapak/Ibu/Saudara/i </span></h4>
+        <h1>Ichsan & Zesika</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown" id="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ichsan&Zesikka</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ichsan&Zesika</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Informasi</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Syukuran Wisuda</h2>
+            <h3>Diselenggarakan pada 20 November 2024 di Cirebon, Jawa Barat.</h3>
+            <p>Oleh karena itu, dengan segala hormat, kamu bermaksud untuk mengundang Bapak/Ibu Saudara/i untuk hadir pada acara tasyakuran kami.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Ichsan Moch F</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus odit facere omnis, nesciunt tempore maxime suscipit voluptas voluptatem? Animi voluptas modi illo, debitis velit dolores ipsum est incidunt quasi.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="img/DSC03158.JPG" alt="Ichsan Moch F" class="img-responsive rounded-circle" />
+              </div>
+            </div>
+          </div>
+          <span class="heart"><i class="bi bi-activity"></i></span>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/DSC02961.JPG" alt="Ichsan Moch F" class="img-responsive rounded-circle" />
+              </div>
+              <div class="col-8">
+                <h3>Zesika Salsa Zahara</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus odit facere omnis, nesciunt tempore maxime suscipit voluptas voluptatem? Animi voluptas modi illo, debitis velit dolores ipsum est incidunt quasi.
+                </p>
+                <p>
+                  Putra dari Bpk. Ipsum <br />
+                  dan <br />
+                  Ibu Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat : The Luxton Cirebon Hotel & Convention Hall. <br />
+              R.A Jl. Kartini No.60, Sukapura, Kec. Kejaksan, Kota Cirebon, Jawa Barat 45122
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.4780627282807!2d108.5506377!3d-6.7113623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee2695b302ce9%3A0x973bc06c1aa2d5f3!2sThe%20Luxton%20Cirebon%20Hotel%20%26%20Convention!5e0!3m2!1sid!2sid!4v1730976014601!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a href="https://maps.app.goo.gl/GexyNERmnZEC4ihG6" target="_blank" class="btn btn-warning btn-sm my-3"> Klik untuk Membuka Peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Jikalau tiba ditujuan namun tidak ada tanda-tanda sedang dilangsungkan acara, boleh jadi anda salah tempat atau salah jadwal.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span> 08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span> Senin, 28 Agustus 2028</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara berlangsung diharapkan kondusif demi menjaga kenyamanan dan kekhidmatan.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span> 11.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span> Senin, 28 Agustus 2028</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara berlangsung diharapkan kondusif demi menjaga kenyamanan dan kekhidmatan.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span> Bagaimana Cinta Kami Bersemi </span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum dolore porro animi et dolorum corporis tenetur vitae pariatur repellendus! Beatae excepturi ducimus provident, officiis et illo similique inventore reprehenderit
+              pariatur.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-img" style="background-image: url(img/umc.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>14 November 1999</span>
+                  </div>
+                  <div class="timeline-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus libero voluptates autem accusamus dolores doloribus nostrum totam doloremque repellat cupiditate iure quis numquam accusantium, fugit, eligendi
+                    exercitationem deleniti. Quibusdam, illo.
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/300/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>12 September 2021</span>
+                  </div>
+                  <div class="timeline-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus libero voluptates autem accusamus dolores doloribus nostrum totam doloremque repellat cupiditate iure quis numquam accusantium, fugit, eligendi
+                    exercitationem deleniti. Quibusdam, illo.
+                  </div>
+                </div>
+              </li>
+
+              <li class="">
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/301/301)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>12 September 2021</span>
+                  </div>
+                  <div class="timeline-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus libero voluptates autem accusamus dolores doloribus nostrum totam doloremque repellat cupiditate iure quis numquam accusantium, fugit, eligendi
+                    exercitationem deleniti. Quibusdam, illo.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sunt?</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/16/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/16/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/15/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/15/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/17/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/17/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/18/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/18/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/19/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/19/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/20/1200/768" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/20/300/400" alt="Ichsan & Zesika" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+        </div>
+
+        <form
+          id="my-form"
+          action=""
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbwomPrRvxSoJNZXoPdACoghmwU2ifA-a7qFCHmhpBtCitJU27ABDWQxBsuzdMdHlPhACA/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" placeholder="" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlahkehadiran" class="form-label"> Jumlah Tamu</label>
+              <input type="number" class="form-control" id="jumlahkehadiran" name="jumlahkehadiran" placeholder="" min="1" max="5" length="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih Salah Satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 36px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement('script');
+                s.src = 'https://ichsanzesika.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et illum sit vero error numquam!</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item"><span class="fw-bold">BCA</span> 9988776655 - ICHSAN MOCH F</li>
+              <li class="list-group-item"><span class="fw-bold">MANDIRI</span> 9988776655 - ICHSAN MOCH F</li>
+              <li class="list-group-item"><span class="fw-bold">SAWERIA</span> 9988776655 - ICHSAN MOCH F</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 IchsanZesika Wedding. All Right Reserved.</small>
+            <small class="block">Designed by <a href="https://instagram.com/ichsnmf_">Ichsan Moch F</a></small>
+            <ul class="mt-3">
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" class="song" autoplay loop>
+        <source src="audio/TheScript-TheManWhoCan'tbeMoved.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- Countdown JS dari CDN -->
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <script>
+      simplyCountdown('#simply-countdown', {
+        // Mengubah dari class ke ID
+        year: 2028, // required
+        month: 8, // required
+        day: 28, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          days: { singular: 'hari', plural: 'hari' },
+          hours: { singular: 'jam', plural: 'jam' },
+          minutes: { singular: 'menit', plural: 'menit' },
+          seconds: { singular: 'detik', plural: 'detik' },
+        },
+      });
+    </script>
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden';
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIcon = document.querySelector('.audio-icon-wrapper');
+      const song = document.querySelector('#song');
+      const icon = document.querySelector('.audio-icon-wrapper i');
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = 'smooth';
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.1;
+        audioIcon.style.display = 'flex';
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIcon.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          icon.classList.remove('bi-disc');
+          icon.classList.add('bi-pause-circle');
+        } else {
+          song.play();
+          icon.classList.add('bi-disc');
+          icon.classList.remove('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem('opened')) {
+      // }
+      disableScroll();
+    </script>
+    <script>
+      window.addEventListener('load', function () {
+        const form = document.getElementById('my-form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          }).then(() => {
+            alert('Success!');
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/I';
+
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ , $/, ',');
+
+      document.querySelector('#nama').value = nama;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  </body>
+</html>
